@@ -21,9 +21,9 @@ This project aims at solving a dinner problem (boolean satisfiability problem ) 
 
 SAT(Boolean Satisfiability Problem) is the problem of determining if there exists an interpretation that satisfies a given boolean formula. It asks whether the variables of a given boolean formula can be consistently replaced by the values TRUE or FALSE in such a way that the formula evaluates to TRUE. If this is the case, the formula is called satisfiable. On the other hand, if no such assignment exists, the function expressed by the formula is FALSE for all possible variable assignments and the formula is unsatisfiable.
 
-A Boolean SAT problem can be solved by determining all the input combinations into a boolean function such that the output is true. Since searching through the combinations is needed, Grover's algorithm is used.
+A Boolean SAT problem can be solved by determining all the input combinations that fit into a boolean function such that the output is true. Since searching through the combinations is needed, Grover's algorithm is used.
 
-Grover’s algorithm, also known as the quantum search algorithm, is a quantum algorithm designed by Los Grover in 1996 to search for an element in an unsorted array quadratically faster ( O(sqrt(N)) : Time Complexity) than the classical linear search for large datasets. This project aims at solving a particular boolean satisfiability problem (dinner problem) using Grover's algorithm.
+Grover’s algorithm, also known as the quantum search algorithm, is a quantum algorithm designed by Los Grover in 1996 to search for an element in an unsorted array quadratically faster ( O(sqrt(N) ) : Time Complexity) than the classical linear search for large datasets. This project aims at solving a particular boolean satisfiability problem (dinner problem) using Grover's algorithm.
 
 ### Problem Statement
 Frank wants to throw a dinner party to celebrate Alice and Bob’s engagement. He is also considering inviting their mutual friends Charles, Dave and Eve. However, he is aware that Charles will come to the party only if Dave comes without Eve. Frank wants to know what possible combinations of invitations he can write for his friends Alice, Bob, Charles, Dave and Eve.
@@ -56,7 +56,7 @@ Help Frank calculate all the possible combinations using Grover’s algorithm.
 
 ***Python*** : The complete project is written in python programming language.
 
-***Qiskit*** : Provides tools for creating and manipulating quantum programs and running them on prototype quantum devices on IBM Quantum Experience or on simulators on a local computer
+***Qiskit*** : Provides tools for creating and manipulating quantum programs and running them on prototype quantum devices on IBM Quantum Experience or on simulators on a local computer.
 
 ***Numpy*** : To work with matrices.
 
@@ -86,7 +86,8 @@ Help Frank calculate all the possible combinations using Grover’s algorithm.
 <a id="user Guide"></a>
 ## 📖 User Guide
 
-### 1.  The amplitudes of the states are calculated by running the circuit on a Statevector Simulator Backend.
+### 1. Amplitude
+ The amplitudes of the states are calculated by running the circuit on a Statevector Simulator Backend.
 
 Statevector([-0.08562621-1.64517430e-16j, -0.08562621-5.70308882e-16j,
              -0.08562621-4.59238028e-16j, -0.08562621-5.47310893e-16j,
@@ -106,14 +107,17 @@ Statevector([-0.08562621-1.64517430e-16j, -0.08562621-5.70308882e-16j,
               0.4005097 +2.33360524e-15j, -0.08562621-4.77036923e-16j],
             dims=(2, 2, 2, 2, 2))
 
-### 2. The final Grover circuit in (.png) type file
+### 2. Final Circuit
+The final Grover circuit in (.png) type file
 
 <img src="https://user-images.githubusercontent.com/103529456/174485156-2fc7da23-d729-4964-a6e6-fb443cc7cdde.png" alt="grover_circuit" width="705"/>
 
-### 3. The counts of all the possible states, used to print histogram, is present in ***counts.txt*** file in the project directory.
+### 3. Counts of the State
+The counts of all the possible states, used to print histogram, is present in ***counts.txt*** file in the project directory.
 [Download Link](https://github.com/ansh25saini/Grover_Algorithm_Project/files/8935673/counts.txt)
 
-### 4. The histogram of the frequency of all the states is also included. It is calculated using the counts, which are measured by running the circuit on a Qasm Simulator.
+### 4. Histogram
+The histogram of the frequency of all the states is also included. It is calculated using the counts, which are measured by running the circuit on a Qasm Simulator.
 
 <img src="https://user-images.githubusercontent.com/103529456/174485457-5943064c-3181-4318-999e-13c20749ea01.png" alt="histogram" width="705"/>
 
