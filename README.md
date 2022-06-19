@@ -65,7 +65,7 @@ Help Frank calculate all the possible combinations using Grover’s algorithm.
 ***Visual Studio Code*** : Editor used in the project.
 
 <a id="getting-started"></a>
-## 📦 Getting Started/ Setup
+## 📦 Getting Started / Setup
 
 1. Clone this repository.
 
